@@ -1,4 +1,4 @@
-# hkvm
+# run-hyperkit
 This project is to run ubuntu cloud server images in hyperkit in macosx
 
 # ubuntu images
