@@ -14,6 +14,11 @@ A Makefile is provided that automates the steps outlined in the next section.
 ```
 $ make
 ```
+After the VM boots, use the following credentials
+```
+login: ubuntu
+password: ashee007
+```
 *Please note that login into the VM may fail the 1st few times. This is because **cloud-init** has not had a chance to initialize. Make a few attempt, it will 
 eventually work*
 
