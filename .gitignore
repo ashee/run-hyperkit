@@ -1,0 +1,5 @@
+bionic-server-cloudimg-amd64-initrd-generic
+bionic-server-cloudimg-amd64-vmlinuz-generic
+bionic-server-cloudimg-amd64.img
+bionic.raw
+cloud-init.iso
