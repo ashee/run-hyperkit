@@ -1,5 +1,14 @@
 # run-hyperkit
-This project is to run ubuntu cloud server images in hyperkit in macosx
+This project is to run ubuntu cloud server images in hyperkit in macosx.
+Hyperkit get installed when you install docker. Docker uses hyperkit
+underneath the covers.
+```
+$ ls -l `which hyperkit`
+lrwxr-xr-x  1 root  admin  67 May 19 13:39 /usr/local/bin/hyperkit -> /Applications/Docker.app/Contents/Resources/bin/com.docker.hyperkit
+
+$ file `which hyperkit`
+/usr/local/bin/hyperkit: Mach-O 64-bit executable x86_64
+```
 
 # ubuntu images
 Visit https://cloud-images.ubuntu.com/ for ubuntu distributions of cloud images
