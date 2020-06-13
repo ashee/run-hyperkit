@@ -19,8 +19,9 @@ After the VM boots, use the following credentials
 login: ubuntu
 password: ashee007
 ```
-*Please note that login into the VM may fail the 1st few times. This is because **cloud-init** has not had a chance to initialize. Make a few attempt, it will 
-eventually work*
+*Please note that login into the VM may fail the 1st few times. This is because **cloud-init** has not had a chance to initialize. Make a few attempt, it will work eventually.*
+
+The username, password or ssh-keys can be customized by editing *cloud-init/user-data*. See docs at https://cloudinit.readthedocs.io/en/latest/
 
 # ubuntu images
 Visit https://cloud-images.ubuntu.com/ for ubuntu distributions of cloud images
