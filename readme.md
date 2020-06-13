@@ -27,6 +27,11 @@ $ qemu-img convert -f qcow2 -O raw bionic-server-cloudimg-amd64.img bionic.raw
 This also has the advantage of not modifying the original disk image since
 the image is modified at boot time by [cloud-init](https://cloudinit.readthedocs.io/en/latest/).
 
+In case you do not have qemu-img installed in your system, run
+```
+$ brew install qemu-img
+```
+
 # prepare cloud-init.iso
 cloud-init.iso contains initialization data such as user password and ssh keys. 
 Edit contents of cloud-init/ folder to your linking. Afterwards run
@@ -64,3 +69,11 @@ $ stty sane
 ```
 *Please note that when you type the command above, the terminal does not echo back. 
 Just do it. Afterwards, the terminal is back to normal.*
+
+# references
+- See [bhyve](https://www.freebsd.org/cgi/man.cgi?query=bhyve&sektion=8&n=1) for hyperkit command line argments. [hyperkit](https://github.com/moby/hyperkit) is based on [xhyve](https://github.com/machyve/xhyve) which is itself based on bhyve
+- [qemu-img man page](https://www.qemu.org/docs/master/interop/qemu-img.html)
+- [cloud-init docs](https://cloudinit.readthedocs.io/en/latest/)
+- [cloud-init - NoCloud](https://cloudinit.readthedocs.io/en/latest/topics/datasources/nocloud.html) - allows the user to provide user-data and meta-data to the instance without running a network service
+- [ubuntu cloud images](https://cloud-images.ubuntu.com/)
+- [hdiutil man page](https://ss64.com/osx/hdiutil.html) - osx builtin tool to make an iso image
