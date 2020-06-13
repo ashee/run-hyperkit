@@ -9,6 +9,13 @@ lrwxr-xr-x  1 root  admin  67 May 19 13:39 /usr/local/bin/hyperkit -> /Applicati
 $ file `which hyperkit`
 /usr/local/bin/hyperkit: Mach-O 64-bit executable x86_64
 ```
+# automated run
+A Makefile is provided that automates the steps outlined in the next section.
+```
+$ make
+```
+*Please note that login into the VM may fail the 1st few times. This is because **cloud-init** has not had a chance to initialize. Make a few attempt, it will 
+eventually work*
 
 # ubuntu images
 Visit https://cloud-images.ubuntu.com/ for ubuntu distributions of cloud images
